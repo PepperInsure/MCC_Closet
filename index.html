@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Moe Can Change Closet Viewer</title>
+        <style>img.chromoji { width:1em !important; height:1em !important; }.chromoji-font, #chromoji-font { font-size:1em !important; }</style>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/MCC-Closet.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css"></link>
+    </head>
+	<body>
+        
+        <div class="input-wrapper input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Session ID (not user ID!):</span>
+          </div>
+    		<input type="text" value="" id="g_sess_id"></input>
+    		<p class="average-text-space"></p>
+    	</div>
+        <div class="input-wrapper input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Page Number:</span>
+          </div>
+    		<input type="text" value="1" id="g_page_num"></input>
+    		<p class="average-text-space"></p>
+    	</div>
+        <div class="input-wrapper input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Number of Pages:</span>
+            </div>
+    		<input type="text" value="1" id="num_pages"></input>
+    		<p class="average-text-space"></p>
+    	</div>
+        
+        <div class="dropdown show input-group">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Item Type
+          </a>
+
+          <div class="dropdown-menu" id="drop" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item">Head</a>
+            <a class="dropdown-item">Face</a>
+            <a class="dropdown-item">Back</a>
+            <a class="dropdown-item">Body</a>
+            <a class="dropdown-item">Background</a>
+            <a class="dropdown-item">Other</a>
+          </div>
+        </div>
+
+        <button type="button" class=" btn btn-primary" id="select_button">Submit</button>
+
+        <a id="loading"></a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>Image 1</th>
+                    <th>Image 2</th>
+                    <th>Image 3</th>
+                    <th>Image 4</th>
+                    <th>Image 5</th>
+                    <th>Image 6</th>
+                    <th>Image 7</th>
+                    <th>Image 8</th>
+                </tr>
+            </thead>
+            <tbody id="right_change">
+                
+            </tbody>
+        </table>
+		
+	</body>
+	
+	<script>
+        
+	</script>
+
+
+
+</html>
