@@ -54,6 +54,9 @@ $(document).ready(function() {
         GetItemList(user_inputs["cate"], user_inputs["num_pages"], user_inputs["g_page_num"], user_inputs["num_pages"]);
 
         Promise.all(promises).then(function(){
+            //console.log(pages);
+            pages = pages.sort(GidSort);
+            //console.log(pages);
             PrintPages();
         });
 
@@ -96,6 +99,15 @@ $(document).ready(function() {
                 }
             // リクエストして取得したhtmlをitem_listに入れる
         }
+    }
+
+    function GidSort(first, second)
+    {
+        /*
+        console.log(first.ID);
+        console.log(second.ID);
+        */
+        return first.ID - second.ID;
     }
     //Takes the 5th element of the json return, removes everything that isn't a number, converts to int
     function ExtractID(json_part)
